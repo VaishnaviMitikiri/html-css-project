@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photography Portfolio</title>
+  <style>
+    /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles (Navigation Bar) */
+header {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+#home {
+  background: url('images/hero-image.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-container h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero-container p {
+  font-size: 24px;
+}
+
+/* Gallery Section */
+#gallery {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+#gallery h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+#about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #333;
+  color: white;
+  padding: 50px 20px;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+}
+
+form label {
+  font-size: 18px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #home h1 {
+    font-size: 36px;
+  }
+
+  #home p {
+    font-size: 18px;
+  }
+
+  form {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #home h1 {
+    font-size: 28px;
+  }
+
+  #home p {
+    font-size: 16px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="hero-container">
+      <h1>Welcome to My Photography</h1>
+      <p>Capturing moments through the lens</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <div class="container">
+      <h2>My photography</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="https://w0.peakpx.com/wallpaper/494/962/HD-wallpaper-kannada-heroine-krithi-shetty-heroine-kannada-thumbnail.jpg" alt="Photography 1"></div>
+        <div class="gallery-item"><img src="https://i.pinimg.com/474x/a1/1e/06/a11e063b22fc15d4cd7b71b29fef8cab.jpg" alt="Photography 2"></div>
+        <div class="gallery-item"><img src="https://wallpapers.com/images/hd/beautiful-heroine-rakul-singh-zbjz3m3nop3r6rpn.jpg" alt="Photography 3"></div>
+        <div class="gallery-item"><img src="https://newsmeter.in/h-upload/2021/11/10/308083-jhanvi-kapoor.webp" alt="Photography 4"></div>
+        <div class="gallery-item"><img src="https://w0.peakpx.com/wallpaper/642/473/HD-wallpaper-sreeleela-kannada-actress-telugu-actress-thumbnail.jpg" alt="Photography 5"></div>
+        <div class="gallery-item"><img src="https://i.pinimg.com/736x/1e/1d/c7/1e1dc768080052c38e5e114973889c29.jpg" alt="Photography 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I am a passionate photographer who loves capturing the beauty of life. Whether it's portraits, landscapes, or street photography, I strive to tell stories through my images.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Name | Photography Portfolio</p>
+  </footer>
+
+</body>
+</html>
